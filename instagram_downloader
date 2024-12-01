@@ -1,0 +1,10 @@
+# instagram_downloader.py
+
+from instaloader import Instaloader
+
+def download_post(url):
+    loader = Instaloader()
+    loader.download_post_from_url(url, target="downloads")
+
+# Sample usage
+download_post("https://www.instagram.com/p/EXAMPLE/")
